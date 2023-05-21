@@ -259,11 +259,16 @@
 <script id="template-article-author" type="text/x-handlebars-template">
   <a href="#author-{{ author }}">{{ author }}</a>
 </script>
-<!-- <script id="template-tag-cloud-link" type="text/x-handlebars-template">
+<script id="template-tag-cloud-link" type="text/x-handlebars-template">
   {{#each tags}}
   <li><a class="{{ className }}" href="#tag-{{ tag }}">{{ tag }} {{count}}</a></li>
   {{/each}}
-</script> -->
+</script>
+<script id="template-author-cloud-link" type="text/x-handlebars-template">
+  {{#each authors}}
+  <li><a href="#author-{{ author }}">{{ author }}({{ count }})</a></li>
+  {{/each}}
+</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
 <script src="js/script.js"></script>
