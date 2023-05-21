@@ -1,5 +1,9 @@
 'use strict';
 
+// const templates = {
+//   articleLink: Handlebars.compile(document.querySelector('#template-article-link').innerHTML)
+// }
+
 function titleClickHandler(event){
     event.preventDefault();
     const clickedElement = this;
@@ -307,7 +311,7 @@ generateAuthors();
   
         /* remove class active */
     activeTag.classList.remove('active');
-      /* END LOOP: for each active tag link */
+      /* END LOOP: for each active tag link */fhdf
     }
       /* find all tag links with "href" attribute equal to the "href" constant */
     const tagsLinks = document.querySelectorAll('[href="' + href + '"]');
